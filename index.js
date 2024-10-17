@@ -5,7 +5,7 @@ const puerto = 3000;
 app.use(cors());
 
 app.get('/usuario' ,function(req, res){
-    res.json[{
+    res.json([{
         primernombre: "Disraely",
         segundonombre: "Omar",
         primerapellido: "Pastor",
@@ -34,11 +34,11 @@ app.get('/usuario' ,function(req, res){
             desde: "2011-01-01",
             hasta: "20013-12-31"
         }]
-        }];
+        }]);
     });
 
 app.get('/genero' ,function(req,res){
-    res.json[{
+    res.json([{
         
             id:1,
             genero: "Masculino"
@@ -47,12 +47,12 @@ app.get('/genero' ,function(req,res){
             genero: "Femenino"
         }
 
-    ];       
+    ]);       
     
 });
 
 app.get('/tipo_documento' ,function(req, res){
-    res.json[{
+    res.json([{
         id: 1,
         tipo_documento: "DUI"
     },{
@@ -66,7 +66,7 @@ app.get('/tipo_documento' ,function(req, res){
         tipo_documento: "PASAPORTE"
     }
 
-    ];
+    ]);
 });
 
 app.get('/departamento' ,function(req, res){
@@ -85,9 +85,11 @@ app.get('/departamento' ,function(req, res){
     },{
         id: 5,
         departamento: "San Salvador"
-    },{id: 6,
+    },{
+        id: 6,
         departamento: "chalatenango"
-    },{id: 7,
+    },{
+        id: 7,
         departamento: "ACuscátlan"
     },{
         id: 8,
@@ -116,7 +118,7 @@ app.get('/departamento' ,function(req, res){
 
 
 app.get('/municipio' ,function(req, res){
-    res.json[{
+    res.json([{
         id: 1,
         municipio: "Ahuachapan norte"
     },{
@@ -124,10 +126,10 @@ app.get('/municipio' ,function(req, res){
         municipio: "ahuachapan centro"
     },{
         id: 3,
-        departamento: "ahuachapan sur"
+        municipio: "ahuachapan sur"
     },{
         id: 4,
-        departamento: "La Libertad costa"
+        dmunicipio: "La Libertad costa"
     },{
         id: 5,
         departamento: "la libertad sur"
@@ -176,7 +178,7 @@ app.get('/municipio' ,function(req, res){
     },{
         id: 20,
         municipio: "Morazan sur"
-  }];
+  }]);
 });
 
 app.get('/sumar', function(req,res){
