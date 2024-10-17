@@ -1,6 +1,8 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
 const puerto = 3000;
+app.use(cors());
 
 app.get('/usuario' ,function(req, res){
     res.json[{
@@ -129,9 +131,11 @@ app.get('/municipio' ,function(req, res){
     },{
         id: 5,
         departamento: "la libertad sur"
-    },{id: 6,
+    },{
+        id: 6,
         departamento: "san salvador norte"
-    },{id: 7,
+    },{
+        id: 7,
         departamento: "san salvador sur"
     },{
         id: 8,
@@ -153,27 +157,26 @@ app.get('/municipio' ,function(req, res){
         departamento: "La Union norte"
     },{
         id: 14,
-        departamento: "Morazan norte"
-    },{
+        municipio: "Morazan norte"
     },{
         id: 15,
-        departamento: "Morazan sur"
+        municipio: "Morazan sur"
     },{
         id: 16,
-        departamento: "Usulutan sur"
+        municipio: "Usulutan sur"
     },{
         id: 17,
-        departamento: "San Miguel norte"
+        municipio: "San Miguel norte"
     },{
         id: 18,
-        departamento: "La Union sur"
+        municipio: "La Union sur"
     },{
         id: 19,
-        departamento: "san vicente sur"
+        municipio: "san vicente sur"
     },{
         id: 20,
-        departamento: "Morazan sur"
-}];
+        municipio: "Morazan sur"
+  }];
 });
 
 app.get('/sumar', function(req,res){
